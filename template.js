@@ -300,7 +300,7 @@
             var new_content = this.render(data);
 
             this.emitEvent('re-draw');
-            dom.first().replaceWith(new_content);
+            dom.replaceWith(new_content);
             this.emitEvent('drawn', new_content);
             this.rendered();
 
